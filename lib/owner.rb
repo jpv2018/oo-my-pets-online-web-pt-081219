@@ -30,6 +30,7 @@ class Owner
   
   def dogs
     @dogs
+    self.
   end
   
   def cats
