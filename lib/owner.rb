@@ -36,6 +36,9 @@ class Owner
     owners_cats = []
     Cats.each do {|cat|
     if cat.owner == self 
+      owners_cats << cat
+    else
+      
   end
   
   def buy_cat(cat_name)
