@@ -38,11 +38,13 @@ class Owner
   
   def buy_cat(cat_name)
     new_cat = Cat.new(cat_name)
+    new_cat.owner = self
     @cats << new_cat
   end
   
   def buy_dog(dog_name)
     new_dog = Dog.new(dog_name)
+    new_dog.owner = self
     @dogs << new_dog
   end
   
