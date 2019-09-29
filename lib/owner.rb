@@ -75,6 +75,6 @@ class Owner
     self.dogs.each do |dog|
       dog.mood = 'nervous'
     end
-    self.clear
+    arr.clear
   end
 end
