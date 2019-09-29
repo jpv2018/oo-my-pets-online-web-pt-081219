@@ -78,6 +78,6 @@ class Owner
     
     self.dogs.clear
     
-    self.cats.clear
+    self.clear
   end
 end
