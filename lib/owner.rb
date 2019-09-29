@@ -28,6 +28,24 @@ class Owner
     @@count = 0
   end
   
+  def dogs
+    @dogs
+  end
+  
+  def cats
+    @cats
+  end
+  
+  def buy_cat(cat_name)
+    new_cat = Cat.new(cat_name)
+    @cats << new_cat
+  end
+  
+  def buy_dog(dog_name)
+    new_dog = Dog.new(dog_name)
+    @dogs << new_dog
+  end
+  
   def say_species
     "I am a human."
   end
