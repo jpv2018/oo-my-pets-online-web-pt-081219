@@ -12,6 +12,15 @@ class Owner
     @@count += 1
   end
   
+  def self.all
+    @@all
+  end
+  
+  def self.count
+    @@count
+  end
+  
+  def self.
   def say_species
     "I am a human."
   end
