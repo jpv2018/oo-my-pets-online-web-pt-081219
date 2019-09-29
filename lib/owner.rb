@@ -33,7 +33,9 @@ class Owner
   end
   
   def cats
-    @cats
+    owners_cats = []
+    Cats.each do {|cat|
+    if cat.owner == self 
   end
   
   def buy_cat(cat_name)
