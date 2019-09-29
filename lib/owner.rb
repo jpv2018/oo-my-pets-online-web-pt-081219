@@ -11,8 +11,6 @@ class Owner
     @species = "human"
     @@count += 1
     @@all << self
-    @cats = []
-    @dogs = []
   end
   
   def self.all
@@ -29,8 +27,7 @@ class Owner
   end
   
   def dogs
-    @dogs
-    self.
+    self.Dog.all
   end
   
   def cats
