@@ -5,7 +5,6 @@ class Owner
   @@all = []
   
   @@count = 0
-
   
   def initialize(name)
     @name = name
@@ -78,4 +77,7 @@ class Owner
       dog.owner = nil
     end
   end
+  
+  def list_pets
+    "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
 end
