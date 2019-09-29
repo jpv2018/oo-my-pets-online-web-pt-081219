@@ -5,16 +5,15 @@ class Owner
   @@all = []
   
   @@count = 0
-  
-  @@cats = []
-  
-  @@dogs = []
+
   
   def initialize(name)
     @name = name
     @species = "human"
     @@count += 1
     @@all << self
+    @dogs = []
+    @cats = []
   end
   
   def self.all
@@ -44,12 +43,12 @@ class Owner
   
   def buy_cat(cat_name)
     new_cat = Cat.new(cat_name, self)
-    @@cats << new_cat
+    @cats << new_cat
   end
   
   def buy_dog(dog_name)
     new_dog = Dog.new(dog_name, self)
-    @@dogs << new_dog
+    @dogs << new_dog
   end
   
   def say_species
@@ -57,7 +56,7 @@ class Owner
   end
   
   def walk_dogs
-   @@dogs.each do |dog|
+   self.dogs.each do |dog|
       dog.mood = 'happy'
     end
   end
