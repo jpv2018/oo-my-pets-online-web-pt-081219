@@ -6,13 +6,15 @@ class Owner
   
   @@count = 0
   
+  @@cats = []
+  
+  @@dogs = []
+  
   def initialize(name)
     @name = name
     @species = "human"
     @@count += 1
     @@all << self
-    @@cats = []
-    @@dogs = []
   end
   
   def self.all
